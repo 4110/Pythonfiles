@@ -15,7 +15,12 @@ obj = json.loads(data)
 #print('$ ' + obj['hdurl'])--to print the decoded data
 
 root = tk.Tk()
+root.geometry("1400x900")
+#get the json object
 img_url = obj['url']
+exp=obj['explanation']
+w =tk.Label(root, text=exp,height=7,width=150,wraplength=1200)
+w.pack()
 response = requests.get(img_url)
 img_data = response.content
 img = ImageTk.PhotoImage(Image.open(BytesIO(img_data)))
