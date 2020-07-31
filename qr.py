@@ -8,7 +8,7 @@ from serprint import printval
 print("[INFO] starting video stream...")
 vs = VideoStream(src=0,usePiCamera=False).start()
 time.sleep(2.0)
-URL = 'http://127.0.0.1:5000/billprint'
+URL = 'http://192.168.43.21:5000/billprint'
 # open the output CSV file for writing and initialize the set of
 # barcodes found thus far
 while True:
