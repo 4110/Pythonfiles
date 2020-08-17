@@ -28,7 +28,7 @@ def up():
 
         #The mail addresses and password
         sender_address = 'care.deekshi@gmail.com'
-        sender_pass = 'Kingkise0@'
+        sender_pass = 'ur passsss'
         receiver_address = mail
         #Setup the MIME
         message = MIMEMultipart()
